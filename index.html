@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Saagar Parikh</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(-45deg, #0c010f, #1b0033, #090014, #1c0824);
+            background-size: 400% 400%;
+            animation: gradient 20s ease infinite;
+            color: #fff; /* White text */
+            margin: 0;
+            padding: 0;
+        }
+
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .fixed-left {
+            position: fixed;
+            width: 40%;
+            height: 100vh;
+            background: transparent;
+            color: #ecf0f1;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .fixed-left h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .fixed-left h2 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        .fixed-left nav {
+            margin-top: 20px;
+        }
+
+        .fixed-left nav a {
+            display: block;
+            color: #ecf0f1;
+            text-decoration: none;
+            font-size: 1.2rem;
+            margin: 10px 0;
+            transition: color 0.3s;
+        }
+
+        .fixed-left nav a:hover {
+            color: #3498db;
+        }
+
+        .scrollable-right {
+            margin-left: 40%;
+            width: 60%;
+            padding: 50px;
+            background-color: transparent;
+            overflow-y: auto;
+        }
+
+        section {
+            margin-bottom: 50px;
+        }
+
+        section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: white;
+        }
+
+        section p, ul {
+            font-size: 1.2rem;
+            color: white;
+            line-height: 1.6;
+        }
+
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact-form label {
+            font-size: 1rem;
+            margin-bottom: 5px;
+        }
+
+        .contact-form input, .contact-form textarea, .contact-form button {
+            font-size: 1rem;
+            margin-bottom: 15px;
+            padding: 10px;
+            width: 100%;
+        }
+
+        .contact-form button {
+            background-color: #3498db;
+            color: #ecf0f1;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .contact-form button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <div class="fixed-left">
+        <h1>Saagar Parikh</h1>
+        <h2>Web Developer</h2>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </div>
+
+    <div class="scrollable-right">
+        <section id="about">
+            <h2>About</h2>
+            <p>Hello! I'm Saagar, a web developer passionate about creating beautiful and functional user experiences. I specialize in front-end development, combining design and technology to craft engaging digital interfaces.</p>
+        </section>
+
+        <section id="experience">
+            <h2>Experience</h2>
+            <p>Interned at Alston & Bird, where I contributed to web development projects, honing my skills in modern web technologies and team collaboration.</p>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <ul>
+                <li><strong>Stocks Dip Finder:</strong> A tool to track stock price trends and visualize dips.</li>
+                <li><strong>Ask Me Anything:</strong> An interactive Q&A platform leveraging APIs for insightful answers.</li>
+                <li><strong>TravelX:</strong> A multi-page website offering travel tips, AI recommendations, and weather updates.</li>
+            </ul>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <p>Proficient in:</p>
+            <ul>
+                <li>HTML, CSS, JavaScript (React, Angular, Bootstrap)</li>
+                <li>PHP, SQL, Java, Python</li>
+                <li>UI/UX Design, Graphic Design, Figma</li>
+                <li>Data Visualization, Adobe Creative Suite</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <form class="contact-form">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </div>
+</body>
+</html>
