@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Saagar Parikh</title>
     <style>
+        html {
+            scroll-behavior: smooth;
+        }
         * {
             margin: 0;
             padding: 0;
@@ -42,36 +45,47 @@
             padding: 20px;
             display: flex;
             flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
+            padding-left: 35px;
+            margin-top: 95px;
         }
 
         .fixed-left h1 {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
+            font-size: 3rem;
+            color: #9209dc;
+            margin-bottom: 20px;
+            padding-left: 35px;
         }
 
         .fixed-left h2 {
-            font-size: 1.5rem;
+            font-size: 1rem;
             margin-bottom: 20px;
         }
 
+        .fixed-left h3{
+            font-size: 23px;
+            padding-left: 35px;
+        }
+
         .fixed-left nav {
-            margin-top: 20px;
+            margin-top: 40px;
+            padding-left: 35px;
+            padding-bottom: 10px;
         }
 
         .fixed-left nav a {
             display: block;
             color: #ecf0f1;
             text-decoration: none;
+            font-weight: bold;
+            position: relative;
             font-size: 1.2rem;
             margin: 10px 0;
-            transition: color 0.3s;
+            transition: color 0.3s, background-color 0.3s ease;
+            width: 50%;
         }
 
         .fixed-left nav a:hover {
-            color: #3498db;
+            color: #9209dc;
         }
 
         .scrollable-right {
@@ -80,6 +94,16 @@
             padding: 50px;
             background-color: transparent;
             overflow-y: auto;
+        }
+        
+        @media (max-width: 768px) {
+        .fixed-left {
+            display: none;
+        }
+        .scrollable-right {
+            margin-left: 0;
+            width: 100%;
+        }
         }
 
         section {
@@ -131,12 +155,252 @@
         .contact-form button:hover {
             background-color: #2980b9;
         }
+
+        .typewriter h2 {
+            color: #ffffff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            overflow: hidden; /* Ensures the content is not revealed until the animation */
+            border-right: .18em solid orange; /* The typewriter cursor */
+            white-space: nowrap; /* Keeps the content on a single line */
+            padding-left: 35px; /* Gives that scrolling effect as the typing happens */
+            letter-spacing: .1em; /* Adjust as needed */
+            animation: 
+                typing 1.8s steps(20, end),
+                blink-caret .8s step-end infinite;
+            width: 335px; /* Initial width of the text container */
+        }
+
+        /* The typing effect */
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 75% }
+        }
+
+        /* The typewriter cursor effect */
+        @keyframes blink-caret {
+            from, to { border-color: transparent }
+            50% { border-color: orange }
+        }
+        #exp{
+            justify-items: center;
+        }
+
+        #experience ul {
+            font-size: 15px;
+        }
+
+        .work{
+            position: relative;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            padding: 20px 50px;
+            margin-bottom: 30px;
+            background-color: transparent;
+            border-radius: 10px;
+            width: 90%;
+            
+        }
+
+        .work:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            transform: scale(1.05);
+            box-shadow: 0.3em 0.3em 1em rgb(0, 0, 0);
+        }
+
+        .work-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+
+        .work-date,
+        .work-location {
+            font-size: 0.9rem;
+            color: #ffffff;
+        }
+
+        .work-date {
+            font-weight: bold;
+        }
+
+        .work-location {
+            font-style: italic;
+        }
+
+        .work-title {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #9209dc; /* Dark purple */
+        }
+
+        .work-company {
+            font-size: 1.1rem;
+            color: #ffffff;
+            margin-bottom: 10px;
+        }
+
+        .work-description {
+            font-size: 1rem;
+            color: #bcbcbc;
+            margin-bottom: 15px;
+        }
+
+        .back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #9209dc;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        
+        .back-to-top.show {
+            opacity: .85;
+        }
+
+        .footer {
+            background-color: #2c3e50; /* Dark background */
+            color: #ecf0f1; /* Light text color */
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .footer p {
+            margin: 0;
+            font-size: 14px;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .social-link {
+            text-decoration: none;
+            color: #ecf0f1;
+            font-size: 14px;
+            transition: color 0.3s ease;
+        }
+
+        .social-link:hover {
+            color: #3498db; /* Highlight color on hover */
+        }
+
+        @media (max-width: 768px) {
+            .footer-content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .social-links {
+                margin-top: 10px;
+            }
+        }
+
+        .skills {
+            margin-top: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px; /* space between bubbles */
+            justify-content: center;
+        }
+
+        .skill-bubble {
+            background-color: #421170; /* light purple for the background */
+            color: orange; /* dark indigo/purple for the text */
+            padding: 8px 15px;
+            border-radius: 25px; /* rounded edges */
+            font-size: .8rem; 
+            text-align: center;
+            font-weight: 500; /* slightly bolder text */
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .skill-bubble:hover {
+            background-color: #8a2be2; /* bright purple for hover */
+            color: #fff; /* white text on hover */
+            box-shadow: 0 4px 8px rgba(138, 43, 226, 0.4); /* subtle purple shadow */
+            transform: translateY(-2px); /* slight upward movement on hover */
+        }
+
+        .skill-bubble:active {
+            transform: translateY(1px); /* simulate button press effect */
+        }
+
+        .overlay-image {
+            position: absolute;
+            top: 45%;
+            left: 50%;
+            width: 40%;
+            height: auto; 
+            object-fit: cover; /* Ensure the image covers the container while maintaining aspect ratio */
+            opacity: 0.6; /* Adjust transparency here */
+            pointer-events: none; /* Ensures clicks pass through to underlying content */
+            z-index: 1; /* Ensure the image is layered below the content */
+        }
+
+        .resume-download {
+            display: block;
+            color: #8a2be2;
+            text-decoration: none;
+            font-weight: bold;
+            position: relative;
+            font-size: .6rem;
+            margin: 10px 0;
+            transition: color 0.2s, background-color 0.2s ease;
+            width:150px;
+            padding-left: 35px;
+        }
+
+        .resume-download:hover {
+            color: #ffffff;
+        }
+
+        .profile-area {
+            
+            right: 40px; 
+            text-align: right;
+            padding-right: 35px;
+            
+        }
+
+        .profile-pic {
+            width: 200px; 
+            height: auto; 
+            object-fit: cover;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+            border-radius: 8%;
+            object-fit: cover;
+            margin-left: 20px;
+        }
+        
     </style>
 </head>
 <body>
     <div class="fixed-left">
+        <h3>Hi, my name is </h3>
         <h1>Saagar Parikh</h1>
-        <h2>Web Developer</h2>
+        <div class="typewriter">
+        <h2 style="font-size: 18px;">Front-End / Web Developer</h2></div>
         <nav>
             <a href="#about">About</a>
             <a href="#experience">Experience</a>
@@ -144,20 +408,97 @@
             <a href="#skills">Skills</a>
             <a href="#contact">Contact</a>
         </nav>
+        <a href="SaagarParikh_Resume.pdf" download class="resume-download">Download Resume</a>
+        <img src="images/splogo.png" alt="Overlay Image" class="overlay-image">
     </div>
 
     <div class="scrollable-right">
         <section id="about">
+            <br><br><br><br>
             <h2>About</h2>
-            <p>Hello! I'm Saagar, a web developer passionate about creating beautiful and functional user experiences. I specialize in front-end development, combining design and technology to craft engaging digital interfaces.</p>
+            <div class="profile-area">
+            <img src="images/pfp.png" alt="Profile Picture" class="profile-pic" style="float: right" margin="5px" >
+            </div>
+            <p>Hello! I'm Saagar, a web developer passionate about creating beautiful and functional user experiences. I specialize in front-end development, combining design and technology to craft engaging digital interfaces. As a Web Programming and Design student at Purdue University, I have gained hands-on experience through internships and coursework, where I've learned and applied my knowledge to enhance user interfaces and improve overall functionality. My skills in HTML, CSS, JavaScript, and various design tools enable me to create engaging and user-friendly web experiences. I'm passionate about applying myself to new challenges in the tech industry, and I'm eager to continue growing and contributing to innovative projects.</p>
         </section>
 
         <section id="experience">
+            <br><br>
             <h2>Experience</h2>
-            <p>Interned at Alston & Bird, where I contributed to web development projects, honing my skills in modern web technologies and team collaboration.</p>
+            <section id="exp">
+            <div class="work">
+                <div class="work-header">
+                <div class="work-date">May 2024 — August 2024</div>
+                <div class="work-location">Plano, TX</div>
+            </div>
+            <h3 class="work-title">Front-End Developer Intern</h3> 
+                <p class="work-company">Masergy Communications</p>
+                <ul class="work-description">
+                    <li>Contributed to an 8-person team responsible for migrating over 50 web pages from Masergy to Comcast, rebranding the portal, and updating the UI to meet Comcast's standards.</li>
+                    <li>Collaborated with the QA team to conduct rigorous testing, reducing reported front-end issues and ensuring cross-platform reliability.</li>
+                    <li>Proposed and implemented <strong>UX/UI</strong> improvements, resulting in a 10% increase in user engagement and satisfaction.</li>
+                    <li>Leveraged analytical skills to identify and resolve over 30 issues, enhancing application responsiveness and performance.</li>
+                </ul>
+
+                <div class="skills">
+                    <span class="skill-bubble">HTML</span>
+                    <span class="skill-bubble">CSS</span>
+                    <span class="skill-bubble">Angular</span>
+                    <span class="skill-bubble">TypeScript</span>
+                    <span class="skill-bubble">PHP</span>
+                    <span class="skill-bubble">SQL</span>
+                    <span class="skill-bubble">UX/UI</span>
+                </div>
+            </div>
+
+            <div class="work">
+                <div class="work-header">
+                    <div class="work-date">May 2023 - July 2023</div>
+                    <div class="work-location">Dallas, TX</div>
+                </div>
+                <h3 class="work-title">Website Design and Communication Intern</h3>
+                <p class="work-company">Alston & Bird</p>
+                <ul class="work-description">
+                    <li>Collaborated with a 4-member IT team and HR Department to develop and deliver a high-impact creative project within a 6-week deadline.</li>
+                    <li>Designed 8 <strong>wireframes and prototypes</strong> using <strong>Figma</strong>, which reduced the design process time by 20% and streamlined development workflows.</li>
+                    <li>Conducted thorough testing with the QA team to ensure cross-browser compatibility and responsiveness.</li>
+                </ul>
+
+                <div class="skills">
+                    <span class="skill-bubble">HTML</span>
+                    <span class="skill-bubble">CSS</span>
+                    <span class="skill-bubble">React</span>
+                    <span class="skill-bubble">Photoshop</span>
+                    <span class="skill-bubble">Figma</span>
+                    <span class="skill-bubble">UX/UI</span>
+                </div>
+            </div>
+            
+            <div class="work">
+                <div class="work-header">
+                    <div class="work-date">June 2022 — July 2022</div>
+                    <div class="work-location">Mumbai, India</div>
+                </div>
+                <h3 class="work-title">Data Analytics Intern</h3>
+                <p class="work-company">CASHe</p>
+                <ul class="work-description">
+                    <li>Analyzed over 6,000 financial data points and customer accounts, improving microloan eligibility accuracy by 10% through advanced <strong>data analytics</strong> techniques.</li>
+                    <li>Worked with the data analytics team to refine the loan application process, reducing processing time by approximately 15 hours per week.</li>
+                    <li>Enhanced user categorization accuracy, which resulted in faster loan approvals.</li>
+                </ul>
+                <div class="skills">
+                    <span class="skill-bubble">Data Analytics</span>
+                    <span class="skill-bubble">Excel</span>
+                    <span class="skill-bubble">SQL</span>
+                    <span class="skill-bubble">Python</span>
+                    <span class="skill-bubble">Tableau</span>
+                </div>
+            </div>
+        </section>
         </section>
 
         <section id="projects">
+            <br><br>
             <h2>Projects</h2>
             <ul>
                 <li><strong>Stocks Dip Finder:</strong> A tool to track stock price trends and visualize dips.</li>
@@ -167,17 +508,18 @@
         </section>
 
         <section id="skills">
+            <br><br>
             <h2>Skills</h2>
             <p>Proficient in:</p>
             <ul>
-                <li>HTML, CSS, JavaScript (React, Angular, Bootstrap)</li>
-                <li>PHP, SQL, Java, Python</li>
-                <li>UI/UX Design, Graphic Design, Figma</li>
-                <li>Data Visualization, Adobe Creative Suite</li>
+                <li>HTML/CSS, JavaScript (jQuery, Angular, React, JSX, Bootstrap), TypeScript, PHP, SQL, Java, Python, C++</li>
+                <li>Adobe Creative Suite, Figma, GitHub, Graphic Design, UI/UX Design, 3D Modeling, Data Visualization, API Integration</li>
+                <li>Creativity, Communication, Teamwork, Initiative, Problem-Solving, User-Centered Thinking</li>
             </ul>
         </section>
 
         <section id="contact">
+            <br><br>
             <h2>Contact</h2>
             <form class="contact-form">
                 <label for="name">Name</label>
@@ -187,11 +529,72 @@
                 <input type="email" id="email" name="email" required>
 
                 <label for="message">Message</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
+                <textarea id="message" name="message" required></textarea>
 
                 <button type="submit">Submit</button>
             </form>
         </section>
     </div>
+
+    <button class="back-to-top" onclick="scrollToTop()">Back to Top</button>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Saagar Parikh. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com" target="_blank" class="social-link">LinkedIn</a>
+                <a href="https://github.com" target="_blank" class="social-link">GitHub</a>
+                <a href="mailto:saagar@example.com" class="social-link">Email</a>
+            </div>
+        </div>
+    </footer>
+    
+
+    <script>
+         // Scroll to top functionality
+         function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        window.addEventListener('scroll', function() {
+            const button = document.querySelector('.back-to-top');
+            if (window.scrollY > 150) {
+                button.classList.add('show');
+            } else {
+                button.classList.remove('show');
+            }
+        });
+        // Function to highlight the navbar based on the scroll position
+        window.addEventListener('scroll', function() {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.fixed-left nav a');
+            
+            let currentSection = "";
+    
+            // Loop through sections to find the one currently in view
+            sections.forEach((section) => {
+                const sectionTop = section.offsetTop - 100; // Adjust the offset for better visibility
+                const sectionBottom = sectionTop + section.offsetHeight;
+                
+                if (window.scrollY >= sectionTop && window.scrollY < sectionBottom) {
+                    currentSection = section.getAttribute("id");
+                }
+            });
+    
+            // Remove the highlight class from all navbar links
+            navLinks.forEach((link) => {
+                link.classList.remove("highlight");
+            });
+    
+            // Add the highlight class to the current section's navbar link
+            if (currentSection) {
+                const currentLink = document.querySelector(`.fixed-left nav a[href="#${currentSection}"]`);
+                if (currentLink) {
+                    currentLink.classList.add("highlight");
+                }
+            }
+        });
+    </script>
+    
 </body>
 </html>
