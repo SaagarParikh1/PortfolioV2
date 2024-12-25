@@ -96,5 +96,8 @@
             const arrow = document.querySelector('.arrow-down');
             setTimeout(() => {
                 arrow.style.opacity = '1';
-            }, 2000);
+            }, 1700);
             });
+
+            
+            
