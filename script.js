@@ -98,6 +98,95 @@
                 arrow.style.opacity = '1';
             }, 1700);
             });
+            let currentSlide = 0;
 
-            
-            
+
+        const modal = document.getElementById("slideshowModal");
+        const openBtn = document.getElementById("openSlideshow");
+        const closeBtn = document.getElementsByClassName("close")[0];
+        const slides = document.getElementsByClassName("slide");
+
+
+        const modals = document.querySelectorAll('.modal');
+        const openButtons = document.querySelectorAll('.openSlideshow');
+        const closeButtons = document.querySelectorAll('.close');
+        let currentSlideIndex = {};
+        
+        openButtons.forEach((button, index) => {
+          button.onclick = function() {
+            modals[index].style.display = "block";
+            currentSlideIndex[index] = 0;
+            showSlides(index, currentSlideIndex[index]);
+          }
+        });
+        
+        closeButtons.forEach((button, index) => {
+          button.onclick = function() {
+            modals[index].style.display = "none";
+          }
+        });
+        
+        function showSlides(modalIndex, slideIndex) {
+          const slides = modals[modalIndex].querySelectorAll('.slide');
+          slides.forEach(slide => slide.style.display = "none");
+          slides[slideIndex].style.display = "block";
+        }
+        
+        function changeSlide(modalIndex, n) {
+          const slides = modals[modalIndex].querySelectorAll('.slide');
+          currentSlideIndex[modalIndex] += n;
+          if (currentSlideIndex[modalIndex] >= slides.length) {
+            currentSlideIndex[modalIndex] = 0;
+          } else if (currentSlideIndex[modalIndex] < 0) {
+            currentSlideIndex[modalIndex] = slides.length - 1;
+          }
+          showSlides(modalIndex, currentSlideIndex[modalIndex]);
+        }
+        
+        modals.forEach((modal, index) => {
+          modal.querySelector('.prev').onclick = () => changeSlide(index, -1);
+          modal.querySelector('.next').onclick = () => changeSlide(index, 1);
+        });
+        
+        window.onclick = function(event) {
+          modals.forEach((modal, index) => {
+            if (event.target == modal) {
+              modal.style.display = "none";
+            }
+          });
+        }
+        
+
+        // script.js
+document.getElementById("viewAllProjects").onclick = function() {
+    document.getElementById("gallery").style.display = "block"; // Show the gallery
+};
+
+function filterGallery(category) {
+    const items = document.querySelectorAll('.gallery-item');
+    
+    items.forEach(item => {
+        if (category === 'all') {
+            item.style.display = 'block'; // Show all items
+        } else if (item.classList.contains(category)) {
+            item.style.display = 'block'; // Show items that match category
+        } else {
+            item.style.display = 'none'; // Hide other items
+        }
+    });
+}
+
+function toggleDetails(button) {
+    const details = button.previousElementSibling; // The gallery-details div
+    if (details.classList.contains("hidden")) {
+        details.classList.remove("hidden");
+        button.textContent = "-"; // Change button text to "-"
+    } else {
+        details.classList.add("hidden");
+        button.textContent = "+"; // Change button text to "+"
+    }
+}
+
+
+
+
