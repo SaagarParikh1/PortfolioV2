@@ -1,0 +1,60 @@
+#contact {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+    font-size: 1rem;
+    background: linear-gradient(-45deg, #0c010f, #1b0033, #090014, #1c0824); /* Retain gradient */
+    width: 100%;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 225px;
+    margin-top: 150px;
+}
+
+#contact:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+#contact h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+#contact p {
+    font-size: 1.2em;
+    color: #bbb;
+    margin-bottom: 30px;
+}
+
+.contact-details {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+
+.contact-details li {
+    font-size: 1.1em;
+    margin: 10px 0;
+    color: #f1f1f1;
+}
+
+.contact-details a {
+    color: #00aaff; /* Light blue links */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-details a:hover {
+    color: #007b8b; /* Darker blue for hover effect */
+    text-decoration: underline;
+}
+
+.contact-details li strong {
+    font-weight: 600;
+    color: #d1d1d1; /* Light gray for labels */
+}

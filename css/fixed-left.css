@@ -1,0 +1,163 @@
+.fixed-left {
+    position: fixed;
+    width: 40%;
+    height: 100vh;
+    background: transparent;
+    color: #ffffff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+    margin-top: 95px;
+}
+
+.fixed-left h1 {
+    font-size: 3rem;
+    color: #9209dc;
+    margin-bottom: 20px;
+    padding-left: 50px;
+}
+
+.fixed-left h2 {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.fixed-left h3{
+    font-size: 23px;
+    padding-left: 50px;
+}
+
+.fixed-left nav {
+    margin-top: 40px;
+    padding-left: 50px;
+    padding-bottom: 10px;
+}
+
+.fixed-left nav a {
+    display: block;
+    color: #ecf0f1;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+    font-size: 1.2rem;
+    margin: 20px 0;
+    transition: color 0.3s, background-color 0.3s ease;
+    transition: transform 0.3s ease;
+    width: 40%;
+}
+
+.fixed-left nav a:hover {
+    color: #9209dc;
+    transform: scale(1.2);
+    border-bottom: 2px solid #9209dc;
+}
+
+.fixed-left nav a.highlight {
+    color: #9209dc; 
+    transform: scale(1.2);
+    border-bottom: 2px solid #9209dc;
+}
+
+.typewriter h2 {
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .18em solid orange; /* The typewriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    padding-left: 50px; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .1em; /* Adjust as needed */
+    animation: 
+        typing 1.8s steps(20, end),
+        blink-caret .8s step-end infinite;
+    width: 350px; /* Initial width of the text container */
+}
+
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 75% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange }
+}
+
+
+
+@media (max-width: 768px) {
+    .social-links {
+        margin-top: 10px;
+    }
+}
+
+.overlay-image {
+    position: absolute;
+    top: 55%;
+    left: 60%;
+    width: 30%;
+    height: auto; 
+    object-fit: cover; /* Ensure the image covers the container while maintaining aspect ratio */
+    opacity: 0.6; /* Adjust transparency here */
+    pointer-events: none; /* Ensures clicks pass through to underlying content */
+    z-index: 1; /* Ensure the image is layered below the content */
+}
+
+.resume-download {
+    display: block;
+    color: #8a2be2;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+    font-size: .6rem;
+    margin: 10px 0;
+    transition: color 0.2s, background-color 0.2s ease;
+    transition: transform 0.3s ease;
+    width:150px;
+    padding-left: 50px;
+}
+
+.resume-download:hover {
+    color: #ffffff;
+    transform: scale(1.2);
+}
+
+.resume-download1 {
+    display: block;
+    color: #8a2be2;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+    font-size: 1.2rem;
+    margin: 10px 0;
+    transition: color 0.2s, background-color 0.2s ease;
+    transition: transform 0.3s ease;
+    justify-self: left;
+    padding-left: 50px;
+}
+
+.resume-download1:hover {
+    color: #ffffff;
+    transform: scale(1.2);
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Space between links */
+    width: 30px;
+    height: auto;
+    margin-top: 10px;
+}
+
+.link-button img {
+    width: 30px; /* Adjust size as needed */
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.link-button img:hover {
+    transform: scale(1.2);
+}

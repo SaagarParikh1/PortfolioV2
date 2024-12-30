@@ -4,7 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Saagar Parikh</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/fixed-left.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/education.css">
+    <link rel="stylesheet" href="css/experience.css">
+    <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="css/skills.css">
 </head>
 <body>
     <div class="cursor"></div>
@@ -153,195 +160,25 @@
             </div>
             <a href="SaagarParikh_Resume.pdf"  target="_blank" download class="resume-download1">View Resume</a>
         </section>
-<!--
-<section id="projects">
-    <h2>Projects</h2>
-    <div class="project-grid">
-        
-        <div class="project-card">
-            <h3>Grant County Special Education Cooperative Website</h3>
-            <p class="project-info">A responsive and user-friendly website for the Grant County School District's Special Education Cooperative.</p>
-            <ul class="project-if"> 
-                <li>Collaborated with 11 web developers and UX designers</li>  
-                <li>Enhanced usability and accessibility for diverse user groups</li> 
-                <li>Transformed wireframes into functional components</li> 
-            </ul> 
-            <div class="project-tech">
-                <span class="tech-tag">HTML/CSS</span>
-                <span class="tech-tag">React</span>
-                <span class="tech-tag">JSX</span>
-                <span class="tech-tag">Bootstrap</span>
-            </div>
-            <div class="project-links">
-                <button id="openSlideshow1" class="openSlideshow">Images</button>
-                <a href="#" class="project-link">GitHub</a>
-            </div>
-        </div>
-        <div id="slideshowModal1" class="modal">
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <div class="slideshow-container">
-                    <a class="prev" onclick="changeSlide(0, -1)">&#10094;</a>
-                    <img class="slide" src="image1.jpg" alt="Image 1">
-                    <img class="slide" src="image2.jpg" alt="Image 2">
-                    <img class="slide" src="image3.jpg" alt="Image 3">
-                    <a class="next" onclick="changeSlide(0, 1)">&#10095;</a>
-                </div>
-            </div>
-          </div>
-        
-        
-        <div class="project-card">
-            <h3>Ticket Scout</h3>
-            <p class="project-info">A web application for analyzing ticket prices across multiple platforms, providing real-time access to the best deals.</p>
-            <ul class="project-if">
-                <li>Implemented real-time price comparison and filtering</li>
-                <li>Integrated multiple APIs for data aggregation</li>
-                <li>Developed an interactive and responsive UI </li>
-            </ul>
-            <div class="project-tech">
-                <span class="tech-tag">HTML/CSS</span>
-                <span class="tech-tag">JavaScript</span>
-                <span class="tech-tag">TypeScript</span>
-                <span class="tech-tag">PHP</span>
-                <span class="tech-tag">SQL</span>
-                <span class="tech-tag">API Integration</span>
-            </div>
-            <div class="project-links">
-                <button id="openSlideshow2" class="openSlideshow">Images</button>
-                <a href="#" class="project-link">GitHub</a>
-            </div>
-        </div>
-        <div id="slideshowModal2" class="modal">
-            <div class="modal-content">
-              <span class="close">&times;</span>
-              <div class="slideshow-container">
-                <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
-                <img class="slide" src="images/ticketscout/ticscouthome.png" alt="Image 1">
-                <img class="slide" src="image2.jpg" alt="Image 2">
-                <img class="slide" src="image3.jpg" alt="Image 3">
-                <a class="next" onclick="changeSlide(1)">&#10095;</a>
-              </div>
-            </div>
-          </div>
 
-       
-        <div class="project-card">
-            <h3>TravelX</h3>
-            <p class="project-info">A multi-page travel website offering real-time weather updates, destination information, and AI-generated travel recommendations.</p>
-            <ul class="project-if">
-                <li>Designed intuitive interface with dynamic features</li>
-                <li>Implemented responsive design and multi-API integration</li>
-                <li>Focused on building interactive and seamless user experiences</li>
-            </ul>
-            <div class="project-tech">
-                <span class="tech-tag">HTML/CSS</span>
-                <span class="tech-tag">JavaScript</span>
-                <span class="tech-tag">API Integration</span>
-                <span class="tech-tag">Responsive Design</span>
-            </div>
-            <div class="project-links">
-                <button id="openSlideshow3" class="openSlideshow">Images</button>
-                <a href="#" class="project-link">GitHub</a>
-            </div>
-        </div>
-        <div id="slideshowModal3" class="modal">
-            <div class="modal-content">
-              <span class="close">&times;</span>
-              <div class="slideshow-container">
-                <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
-                <img class="slide" src="images/travelx/travelxhomess.png" alt="Image 1">
-                <img class="slide" src="images/travelx/travelximages.png" alt="Image 2">
-                <img class="slide" src="images/travelx/travelxquestions.png" alt="Image 3">
-                <a class="next" onclick="changeSlide(1)">&#10095;</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="project-card">
-            <h3>Whack-a-Mole & Sliding Puzzle Game</h3>
-            <p class="project-info">An engaging dual-game experience featuring a classic whack-a-mole game and a sliding puzzle, offering both quick reflex challenges and strategic thinking.</p>
-            <ul class="project-if">
-                <li>Developed interactive gameplay mechanics for both games</li> 
-                <li>Designed a responsive and visually appealing user interface</li> 
-                <li>Implemented dynamic animations and smooth transitions</li> 
-                <li>Enhanced user engagement with score tracking and feedback</li> 
-            </ul> 
-            <div class="project-tech">
-                <span class="tech-tag">HTML/CSS</span>
-                <span class="tech-tag">JavaScript</span>
-                <span class="tech-tag">Game Development</span>
-                <span class="tech-tag">UI Design</span>
-            </div>
-        <div class="project-links">
-            <button id="openSlideshow4" class="openSlideshow">Images</button>
-            <a href="#" class="project-link">GitHub</a>
-        </div>
-    </div>
-    <div id="slideshowModal4" class="modal">
-        <div class="modal-content">
-          <span class="close">&times;</span>
-          <div class="slideshow-container">
-            <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
-            <img class="slide" src="images/mole:puzzle/welcome.png" alt="Image 1">
-            <img class="slide" src="images/mole:puzzle/mole.png" alt="Image 2">
-            <img class="slide" src="images/mole:puzzle/moleend.png" alt="Image 3">
-            <img class="slide" src="images/mole:puzzle/sliding.png" alt="Image 3">
-            <a class="next" onclick="changeSlide(1)">&#10095;</a>
-          </div>
-        </div>
-      </div>
-        
-          
-        
-        <div class="project-card">
-            <h3>Stocks Dip Finder</h3>
-            <p class="project-info">A comprehensive web application for tracking and visualizing stock price changes, identifying potential investment opportunities during market dips.</p>
-            <ul class="project-if">
-                <li>Developed interactive UI with dynamic charts and real-time updates</li> 
-                <li>Integrated real-time data via APIs for up-to-date information</li> 
-                <li>Created custom stock tickers and implemented data processing</li> 
-                <li>Enhanced accessibility of complex financial information</li> </ul> 
-            <div class="project-tech">
-                <span class="tech-tag">HTML/CSS</span>
-                <span class="tech-tag">JavaScript</span>
-                <span class="tech-tag">API Integration</span>
-                <span class="tech-tag">Data Visualization</span>
-            </div>
-            <div class="project-links">
-                <button id="openSlideshow5" class="openSlideshow">Images</button>
-                <a href="#" class="project-link">GitHub</a>
-            </div>
-        </div>
-        <div id="slideshowModal5" class="modal">
-            <div class="modal-content">
-              <span class="close">&times;</span>
-              <div class="slideshow-container">
-                <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
-                <img class="slide" src="images/stocksdipfind/stockshome.png" alt="Image 1">
-                <img class="slide" src="image2.jpg" alt="Image 2">
-                <img class="slide" src="image3.jpg" alt="Image 3">
-                <a class="next" onclick="changeSlide(1)">&#10095;</a>
-              </div>
-            </div>
-          </div>
-        </section>
-    -->
     <section id="projects">
         <h2>Projects and Work</h2>
         <section id="gallery" class="gallery">
             <div class="gallery-categories">
-                <button class="category-button" onclick="filterGallery('all')">All</button>
-                <button class="category-button" onclick="filterGallery('web')">Web Development</button>
-                <button class="category-button" onclick="filterGallery('3d')">3D Modeling</button>
-                <button class="category-button" onclick="filterGallery('photoshop')">Photoshop</button>
+                <button class="category-button" data-category="all" onclick="filterGallery('all')">All</button>
+                <button class="category-button" data-category="web" onclick="filterGallery('web')">Web Development</button>
+                <button class="category-button" data-category="3d" onclick="filterGallery('3d')">3D Modeling</button>
+                <button class="category-button" data-category="photoshop" onclick="filterGallery('photoshop')">Photoshop</button>
             </div>
         
             <div class="gallery-items">
                 <div class="gallery-item web">
-                    <div class="gallery-header">
-                        <h3>Grant County Special Education Cooperative Website</h3>
-                        <p class="project-info">A responsive and user-friendly website for the Grant County School District's Special Education Cooperative.</p>
+                    <h3>Grant County Special Education Cooperative Website</h3>
+                    <div class="gallery-content">
+                        <img src="images/grantcounty/thumbnail.png" alt="Project Image" class="thumbnail" onclick="">
+                        <div class="gallery-header">
+                            <p class="project-info">A responsive and user-friendly website for the Grant County School District's Special Education Cooperative.</p>
+                        </div>
                     </div>
                     <div class="gallery-details hidden">
                         <ul class="project-if">
@@ -351,21 +188,25 @@
                         </ul>
                         <br>
                         <div class="gallery-tech">
-                            <span class="tech-tag">HTML/CSS</span>
-                            <span class="tech-tag">React</span>
-                            <span class="tech-tag">JSX</span>
-                            <span class="tech-tag">Bootstrap</span>
+                            <span class="skill-bubble">HTML/CSS</span>
+                            <span class="skill-bubble">React</span>
+                            <span class="skill-bubble">JSX</span>
+                            <span class="skill-bubble">Bootstrap</span>
                         </div>
                     </div>
                     <button class="expand-button" onclick="toggleDetails(this)">+</button>
                 </div>
             </div>
+            
         
             <div class="gallery-items">
                 <div class="gallery-item web">
-                    <div class="gallery-header">
-                        <h3>Ticket Scout</h3>
-                        <p class="project-info">A web application for analyzing ticket prices across multiple platforms, providing real-time access to the best deals.</p>
+                    <h3>Ticket Scout</h3>
+                    <div class="gallery-content">
+                        <img src="images/ticketscout/ticscouthome.png" alt="Project Image" class="thumbnail" onclick="">
+                        <div class="gallery-header">
+                            <p class="project-info">A web application for analyzing ticket prices across multiple platforms, providing real-time access to the best deals.</p>
+                        </div>
                     </div>
                     <div class="gallery-details hidden">
                         <ul class="project-if">
@@ -375,24 +216,28 @@
                         </ul>
                         <br>
                         <div class="gallery-tech">
-                            <span class="tech-tag">HTML/CSS</span>
-                            <span class="tech-tag">JavaScript</span>
-                            <span class="tech-tag">TypeScript</span>
-                            <span class="tech-tag">PHP</span>
-                            <span class="tech-tag">SQL</span>
-                            <span class="tech-tag">API Integration</span>
+                            <span class="skill-bubble">HTML/CSS</span>
+                            <span class="skill-bubble">JavaScript</span>
+                            <span class="skill-bubble">TypeScript</span>
+                            <span class="skill-bubble">PHP</span>
+                            <span class="skill-bubble">SQL</span>
+                            <span class="skill-bubble">API Integration</span>
                         </div>
                     </div>
                     <button class="expand-button" onclick="toggleDetails(this)">+</button>
                 </div>
             </div>
+            
         
 
             <div class="gallery-items">
                 <div class="gallery-item web">
-                    <div class="gallery-header">
-                        <h3>TravelX</h3>
-                        <p class="project-info">A multi-page travel website offering real-time weather updates, destination information, and AI-generated travel recommendations.</p>
+                    <h3>TravelX</h3>
+                    <div class="gallery-content">
+                        <img src="images/travelx/travelxhomess.png" alt="Project Image" class="thumbnail" onclick="">
+                        <div class="gallery-header">
+                            <p class="project-info">A multi-page travel website offering real-time weather updates, destination information, and AI-generated travel recommendations.</p>
+                        </div>
                     </div>
                     <div class="gallery-details hidden">
                         <ul class="project-if">
@@ -402,21 +247,25 @@
                         </ul>
                         <br>
                         <div class="gallery-tech">
-                            <span class="tech-tag">HTML/CSS</span>
-                            <span class="tech-tag">JavaScript</span>
-                            <span class="tech-tag">API Integration</span>
-                            <span class="tech-tag">Responsive Design</span>
+                            <span class="skill-bubble">HTML/CSS</span>
+                            <span class="skill-bubble">JavaScript</span>
+                            <span class="skill-bubble">API Integration</span>
+                            <span class="skill-bubble">Responsive Design</span>
                         </div>
                     </div>
                     <button class="expand-button" onclick="toggleDetails(this)">+</button>
                 </div>
             </div>
             
+            
             <div class="gallery-items">
                 <div class="gallery-item web">
-                    <div class="gallery-header">
-                        <h3>Whack-a-Mole & Sliding Puzzle Game</h3>
-                        <p class="project-info">An engaging dual-game experience featuring a classic whack-a-mole game and a sliding puzzle, offering both quick reflex challenges and strategic thinking.</p>
+                    <h3>Whack-a-Mole & Sliding Puzzle Game</h3>
+                    <div class="gallery-content">
+                        <img src="images/mole:puzzle/mole.png" alt="Project Image" class="thumbnail" onclick="">
+                        <div class="gallery-header">
+                            <p class="project-info">An engaging dual-game experience featuring a classic whack-a-mole game and a sliding puzzle, offering both quick reflex challenges and strategic thinking.</p>
+                        </div>
                     </div>
                     <div class="gallery-details hidden">
                         <ul class="project-if">
@@ -427,10 +276,10 @@
                         </ul>
                         <br>
                         <div class="gallery-tech">
-                            <span class="tech-tag">HTML/CSS</span>
-                            <span class="tech-tag">JavaScript</span>
-                            <span class="tech-tag">Game Development</span>
-                            <span class="tech-tag">UI Design</span>
+                            <span class="skill-bubble">HTML/CSS</span>
+                            <span class="skill-bubble">JavaScript</span>
+                            <span class="skill-bubble">Game Development</span>
+                            <span class="skill-bubble">UI Design</span>
                         </div>
                     </div>
                     <button class="expand-button" onclick="toggleDetails(this)">+</button>
@@ -439,112 +288,130 @@
             
 
             <div class="gallery-items">
-                <div class="gallery-item web">
-                    <div class="gallery-header">
-                        <h3>Stocks Dip Finder</h3>
-                        <p class="project-info">A comprehensive web application for tracking and visualizing stock price changes, identifying potential investment opportunities during market dips.</p>
-                    </div>                    
+                <div class="gallery-item web hidden">
+                    <h3>Stocks Dip Finder</h3>
+                    <div class="gallery-content">
+                        <img src="images/stocksdipfind/stockshome.png" alt="Project Image" class="thumbnail" onclick="">
+                        <div class="gallery-header">
+                            <p class="project-info">A comprehensive web application for tracking and visualizing stock price changes, identifying potential investment opportunities during market dips.</p>
+                        </div>
+                    </div>
                     <div class="gallery-details hidden">
                         <ul class="project-if">
-                            <li>Developed interactive UI with dynamic charts and real-time updates</li> 
-                            <li>Integrated real-time data via APIs for up-to-date information</li> 
-                            <li>Created custom stock tickers and implemented data processing</li> 
-                            <li>Enhanced accessibility of complex financial information</li> 
+                            <li>Developed interactive UI with dynamic charts and real-time updates</li>
+                            <li>Integrated real-time data via APIs for up-to-date information</li>
+                            <li>Created custom stock tickers and implemented data processing</li>
+                            <li>Enhanced accessibility of complex financial information</li>
                         </ul>
                         <br>
                         <div class="gallery-tech">
-                            <span class="tech-tag">HTML/CSS</span>
-                            <span class="tech-tag">JavaScript</span>
-                            <span class="tech-tag">API Integration</span>
-                            <span class="tech-tag">Data Visualization</span>
+                            <span class="skill-bubble">HTML/CSS</span>
+                            <span class="skill-bubble">JavaScript</span>
+                            <span class="skill-bubble">API Integration</span>
+                            <span class="skill-bubble">Data Visualization</span>
                         </div>
                     </div>
                     <button class="expand-button" onclick="toggleDetails(this)">+</button>
                 </div>
             </div>
             
+
+            <div class="gallery-item web">
+                <h3>Stocks Dip Finder</h3>
+                <div class="gallery-content">
+                    <img src="images/askanything/askanythinghome.png" alt="Project Image" class="thumbnail" onclick="">
+                    <div class="gallery-header">
+                        <p class="project-info">A comprehensive web application for tracking and visualizing stock price changes, identifying potential investment opportunities during market dips.</p>
+                    </div>
+                </div>
+                <div class="gallery-details hidden">
+                    <ul class="project-if">
+                        <li>Developed interactive UI with dynamic charts and real-time updates</li>
+                        <li>Integrated real-time data via APIs for up-to-date information</li>
+                        <li>Created custom stock tickers and implemented data processing</li>
+                        <li>Enhanced accessibility of complex financial information</li>
+                    </ul>
+                    <br>
+                    <div class="gallery-tech">
+                        <span class="skill-bubble">HTML/CSS</span>
+                        <span class="skill-bubble">JavaScript</span>
+                        <span class="skill-bubble">API Integration</span>
+                        <span class="skill-bubble">Data Visualization</span>
+                    </div>
+                </div>
+                <button class="expand-button" onclick="toggleDetails(this)">+</button>
+            </div>
             
 
-
-
+            <button id="showMoreBtn" onclick="showMore()">Show More</button>
+            <button id="showLessBtn" class="hidden" onclick="showLess()">Show Less</button>
         </section>
         </section>
 
-        
-        
        
         <section id="skills">
             <h2>Skills</h2>
-            
             <div class="skill-categories">
               <div class="skill-category">
-                <h3>Programming Languages</h3>
-                <div class="skills">
-                  <span class="skill-bubble">JavaScript</span>
-                  <span class="skill-bubble">TypeScript</span>
-                  <span class="skill-bubble">Python</span>
-                  <span class="skill-bubble">Java</span>
-                  <span class="skill-bubble">C++</span>
-                  <span class="skill-bubble">PHP</span>
-                  <span class="skill-bubble">SQL</span>
-                </div>
-              </div>
+                            <h3>Front-End</h3> 
+                            <div class="skills"> 
+                                <span class="skill-bubble">HTML5</span> 
+                                <span class="skill-bubble">CSS3</span> 
+                                <span class="skill-bubble">JavaScript</span> 
+                                <span class="skill-bubble">React</span> 
+                                <span class="skill-bubble">Angular</span> 
+                                <span class="skill-bubble">jQuery</span> 
+                                <span class="skill-bubble">JSX</span> 
+                                <span class="skill-bubble">Bootstrap</span> 
+                                <span class="skill-bubble">TypeScript</span> 
+                                <span class="skill-bubble">Responsive Design</span>
+                            </div> </div>
+                            
           
-              <div class="skill-category">
-                <h3>Web Technologies</h3>
-                <div class="skills">
-                  <span class="skill-bubble">HTML5</span>
-                  <span class="skill-bubble">CSS3</span>
-                  <span class="skill-bubble">React</span>
-                  <span class="skill-bubble">Angular</span>
-                  <span class="skill-bubble">Bootstrap</span>
-                  <span class="skill-bubble">jQuery</span>
-                </div>
-              </div>
-          
-              <div class="skill-category">
-                <h3>Design & Tools</h3>
-                <div class="skills">
-                  <span class="skill-bubble">Figma</span>
-                  <span class="skill-bubble">Adobe Creative Suite</span>
-                  <span class="skill-bubble">UI/UX Design</span>
-                  <span class="skill-bubble">3D Modeling</span>
-                  <span class="skill-bubble">GitHub</span>
-                  <span class="skill-bubble">Data Visualization</span>
-                </div>
-              </div>
-          
-              <div class="skill-category">
-                <h3>Soft Skills</h3>
-                <div class="skills">
-                  <span class="skill-bubble">Communication</span>
-                  <span class="skill-bubble">Teamwork</span>
-                  <span class="skill-bubble">Problem-Solving</span>
-                  <span class="skill-bubble">Creativity</span>
-                  <span class="skill-bubble">Initiative</span>
-                  <span class="skill-bubble">User-Centered Thinking</span>
-                </div>
-              </div>
+                            <div class="skill-category">
+                                <h3>Back-End & Databases</h3>
+                                <div class="skills">
+                                  <span class="skill-bubble">Node.js</span>
+                                  <span class="skill-bubble">PHP</span>
+                                  <span class="skill-bubble">SQL</span>
+                                  <span class="skill-bubble">Python</span>
+                                  <span class="skill-bubble">RESTful APIs</span>
+                                  <span class="skill-bubble">C++</span>
+                                  <span class="skill-bubble">GitHub</span>
+                                  <span class="skill-bubble">Java</span>
+                                </div>
+                              </div>
+                              
+                              <div class="skill-category">
+                                <h3>Design and UI/UX</h3>
+                                <div class="skills">
+                                  <span class="skill-bubble">Figma</span>
+                                  <span class="skill-bubble">Adobe Creative Suite</span>
+                                  <span class="skill-bubble">UI/UX Design Principles</span>
+                                  <span class="skill-bubble">Wireframing</span>
+                                  <span class="skill-bubble">Prototyping</span>
+                                  <span class="skill-bubble">3D-Modeling</span>
+                                  <span class="skill-bubble">Data Visualization</span>
+                                  <span class="skill-bubble">Graphic Design</span>
+                                </div>
+                              </div>
+                              
+                              <div class="skill-category">
+                                <h3>Soft Skills</h3>
+                                <div class="skills">
+                                  <span class="skill-bubble">Problem-Solving</span>
+                                  <span class="skill-bubble">Teamwork</span>
+                                  <span class="skill-bubble">Communication</span>
+                                  <span class="skill-bubble">Creativity</span>
+                                  <span class="skill-bubble">Time Management</span>
+                                  <span class="skill-bubble">Adaptability</span>
+                                  <span class="skill-bubble">Attention to Detail</span>
+                                  <span class="skill-bubble">User-Centered Thinking</span>
+                                </div>
+                              </div>
             </div>
           </section>
-<!--
-          <section id="contact">
-            <h2>Contact</h2>
-            <form class="contact-form" action="contact_form.php" method="post">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" placeholder="Enter your name" required>
-        
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="Enter your email" required>
-        
-                <label for="message">Message</label>
-                <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
-        
-                <button type="submit">Submit</button>
-            </form>
-        </section>
-        
-       --> 
+
 
        <section id="contact">
         <h2>Contact</h2>
@@ -554,11 +421,13 @@
             <li><strong>Phone:</strong> <a href="tel:+1234567890">+1 (214) 471-0668</a></li>
             <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/saagar-parikh1/" target="_blank">linkedin.com/in/saagar-parikh1/</a></li>
             <li><strong>GitHub:</strong> <a href="https://github.com/SaagarParikh1" target="_blank">github.com/SaagarParikh1</a></li>
+            <br>
+            <li><strong>Location:</strong> Frisco, TX</li>
         </ul>
     </section>
     
 
         <button class="back-to-top" onclick="scrollToTop()">Back to Top</button>
-        <script src="script.js"></script>
+        <script src="js/script.js"></script>
     </body>
 </html>
