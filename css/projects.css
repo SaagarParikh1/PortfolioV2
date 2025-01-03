@@ -43,12 +43,12 @@
 .category-button {
     margin: 0 10px;
     padding: 10px 15px;
-    background-color: #421170;
-    color: orange;
+    background-color: #421170; /* Primary button color */
+    color: orange; /* Text color */
     border: none;
     border-radius: 25px;
-    font-size: 0.8rem;
-    font-weight: 500;
+    font-size: 0.9rem; /* Slightly larger for better readability */
+    font-weight: bold; /* Bold text for emphasis */
     cursor: pointer;
     transition: all 0.3s ease;
 }
@@ -135,7 +135,7 @@
     outline: none;
 }
 
-.gallery-item h3 {
+.gallery-items h3 {
     color: #9209dc;
     margin-bottom: 15px;
     font-size: 1.1rem;
@@ -170,6 +170,7 @@
     cursor: pointer; /* Pointer on hover */
     transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition effects */
     margin-top: 20px; /* Space above the button */
+    width: 100%;
 }
 
 #showMoreBtn:hover {
@@ -191,6 +192,7 @@
     cursor: pointer; /* Pointer on hover */
     transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition effects */
     margin-top: 20px; /* Space above the button */
+    width: 100%;
 }
 
 #showLessBtn:hover {
@@ -201,4 +203,26 @@
 #showLessBtn:focus {
     outline: none; /* Remove outline on focus */
 }
-  
+
+.gallery-3d {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px; /* Space between grid items */
+    background-color: transparent;
+    padding: 10px 8px; /* Add more horizontal padding to the container */
+    margin: 10px auto; /* Center the container horizontally */
+    place-items: center; /* Centers items horizontally and vertically */
+}
+
+.gallery-3d div {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex; /* Ensures content inside the div is also centered */
+    flex-direction: column; /* Keeps content stacked vertically */
+    justify-content: center; /* Centers content vertically */
+    align-items: center; /* Centers content horizontally */
+    margin: 0 10px; /* Add spacing between items on the left and right */
+}

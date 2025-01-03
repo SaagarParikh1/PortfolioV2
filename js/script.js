@@ -109,10 +109,16 @@ function filterGallery(category) {
     const items = document.querySelectorAll('.gallery-item');
     let visibleCount = 0;
 
+
     items.forEach(item => {
         if (category === 'all' || item.classList.contains(category)) {
-            item.style.display = visibleCount < itemsPerPage ? 'block' : 'none';
-            item.classList.toggle('hidden', visibleCount >= itemsPerPage);
+            if (visibleCount < itemsPerPage) {
+                item.style.display = 'block';
+                item.classList.remove('hidden');
+            } else {
+                item.style.display = 'none';
+                item.classList.add('hidden');
+            }
             visibleCount++;
         } else {
             item.style.display = 'none';
@@ -176,47 +182,3 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
-
-let currentSlide = 0;
-let slides = [];
-
-function openSlideshow(img) {
-    const modal = document.getElementById('slideshowModal');
-    const modalImg = modal.querySelector('.slide');
-    modal.style.display = "block";
-    
-    // Get all images from the same gallery item
-    const galleryItem = img.closest('.gallery-item');
-    
-    // Gather all slideshow images
-    slides = Array.from(galleryItem.querySelectorAll('.slideshow-image'));
-    
-    // Set the clicked image as the current slide
-    currentSlide = slides.indexOf(galleryItem.querySelector('.slideshow-image')); // Adjust this line if needed
-    
-    if (currentSlide >= 0) {
-        modalImg.src = slides[currentSlide].src; // Set initial image source
-    }
-}
-
-function closeSlideshow() {
-    document.getElementById('slideshowModal').style.display = "none";
-}
-
-function changeSlide(n) {
-    currentSlide += n;
-    
-    if (currentSlide >= slides.length) {
-        currentSlide = 0;
-    } else if (currentSlide < 0) {
-        currentSlide = slides.length - 1;
-    }
-    
-    const modalImg = document.querySelector('#slideshowModal .slide');
-    modalImg.src = slides[currentSlide].src; // Update the image source
-}
-
-// Event listeners for closing and navigating the slideshow
-document.querySelector('.close').onclick = closeSlideshow;
-document.querySelector('.prev').onclick = () => changeSlide(-1);
-document.querySelector('.next').onclick = () => changeSlide(1);

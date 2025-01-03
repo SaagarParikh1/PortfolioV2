@@ -168,7 +168,7 @@
                 <button class="category-button" data-category="all" onclick="filterGallery('all')">All</button>
                 <button class="category-button" data-category="web" onclick="filterGallery('web')">Web Development</button>
                 <button class="category-button" data-category="3d" onclick="filterGallery('3d')">3D Modeling</button>
-                <button class="category-button" data-category="photoshop" onclick="filterGallery('photoshop')">Photoshop</button>
+                <button class="category-button" data-category="graphicDesign" onclick="filterGallery('graphicDesign')">Graphic Design</button>
             </div>
         
             <div class="gallery-items">
@@ -315,33 +315,65 @@
                 </div>
             </div>
             
-
-            <div class="gallery-item web">
-                <h3>Stocks Dip Finder</h3>
-                <div class="gallery-content">
-                    <img src="images/askanything/askanythinghome.png" alt="Project Image" class="thumbnail" onclick="">
-                    <div class="gallery-header">
-                        <p class="project-info">A comprehensive web application for tracking and visualizing stock price changes, identifying potential investment opportunities during market dips.</p>
-                    </div>
-                </div>
-                <div class="gallery-details hidden">
-                    <ul class="project-if">
-                        <li>Developed interactive UI with dynamic charts and real-time updates</li>
-                        <li>Integrated real-time data via APIs for up-to-date information</li>
-                        <li>Created custom stock tickers and implemented data processing</li>
-                        <li>Enhanced accessibility of complex financial information</li>
-                    </ul>
-                    <br>
-                    <div class="gallery-tech">
-                        <span class="skill-bubble">HTML/CSS</span>
-                        <span class="skill-bubble">JavaScript</span>
-                        <span class="skill-bubble">API Integration</span>
-                        <span class="skill-bubble">Data Visualization</span>
-                    </div>
-                </div>
-                <button class="expand-button" onclick="toggleDetails(this)">+</button>
+            <div class="gallery-items">
+                <div class="gallery-item web hidden">
+                    <h3>Stocks Dip Finder</h3>
+                    <div class="gallery-content">
+                        <img src="images/askanything/askanythinghome.png" alt="Project Image" class="thumbnail" onclick="">
+                    <div class="gallery-header"> 
+                        <p class="project-info">A Q&A website for comparative insights from multiple sources (Google and OpenAI), providing users with comprehensive answers to their queries.</p> 
+                    </div> 
+                    <div class="gallery-details hidden"> 
+                        <ul class="project-if"> 
+                            <li>Built a dynamic Q&A platform integrating multiple data sources</li> 
+                            <li>Implemented asynchronous JavaScript for seamless API interactions</li> 
+                            <li>Developed user-friendly interface for complex information display</li> 
+                            <li>Enhanced query processing and result comparison functionality</li> 
+                        </ul> 
+                        <br> 
+                        <div class="gallery-tech">
+                            <span class="skill-bubble">HTML/CSS</span> 
+                            <span class="skill-bubble">JavaScript</span> 
+                            <span class="skill-bubble">API Integration</span>
+                        </div> 
+                    </div> 
+                    <button class="expand-button" onclick="toggleDetails(this)">+</button> 
+                </div> 
             </div>
             
+            <!-- 3D Modeling items -->
+            <div class="gallery-3d">
+                <div class="gallery-item">
+                    <h3>Truck Model</h3>
+                    <iframe title="Truck" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" src="https://sketchfab.com/models/f2151058c0384f9d94c3154a594a6399/embed"></iframe>
+                </div>
+
+                <div class="gallery-item">
+                    <h3>Castle Model</h3>
+                    <iframe title="Castle" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" src="https://sketchfab.com/models/ff0dd7639ff04eeca110f7ea9f8b727c/embed"></iframe>
+                </div>
+
+                <div class="gallery-item">
+                    <h3>Blocks Model</h3>
+                    <iframe title="Blocks" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" src="https://sketchfab.com/models/63866579805f4be2ad3e1a45dcd75678/embed"></iframe>
+                </div>
+
+                <div class="gallery-item">
+                    <h3>Plant Model</h3>
+                    <iframe title="Plant" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" src="https://sketchfab.com/models/cca9a7b0375a45afa014316ca93da9f8/embed"></iframe>
+                </div>
+
+                <div class="gallery-item">
+                    <h3>Signature Model</h3>
+                    <iframe title="Signature" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" src="https://sketchfab.com/models/1afe4bf32f104656891552fdcc46c2f2/embed"></iframe>
+                </div>
+
+                <div class="gallery-item">
+                    <h3>Marble Course Model</h3>
+                    <iframe title="MarbleCourse" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" src="https://sketchfab.com/models/d01cac4db35f4e69a35ee62f801e210c/embed"></iframe>
+                </div>
+            </div>
+
 
             <button id="showMoreBtn" onclick="showMore()">Show More</button>
             <button id="showLessBtn" class="hidden" onclick="showLess()">Show Less</button>
