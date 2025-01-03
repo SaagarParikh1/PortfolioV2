@@ -109,16 +109,10 @@ function filterGallery(category) {
     const items = document.querySelectorAll('.gallery-item');
     let visibleCount = 0;
 
-
     items.forEach(item => {
         if (category === 'all' || item.classList.contains(category)) {
-            if (visibleCount < itemsPerPage) {
-                item.style.display = 'block';
-                item.classList.remove('hidden');
-            } else {
-                item.style.display = 'none';
-                item.classList.add('hidden');
-            }
+            item.style.display = visibleCount < itemsPerPage ? 'block' : 'none';
+            item.classList.toggle('hidden', visibleCount >= itemsPerPage);
             visibleCount++;
         } else {
             item.style.display = 'none';
