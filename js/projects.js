@@ -27,7 +27,9 @@ function openGallery(galleryId) {
             'images/mole:puzzle/sliding.png'
         ],
         'stockTrackerGallery': [
-            'images/stocksdipfind/stockshome.png'
+            'images/stocksTracker/stockTrac1.png',
+            'images/stocksTracker/stockTrac2.png',
+            'images/stocksTracker/stockTrac3.png',
         ],
         'askMeAnyGallery': [
             'images/askanything/askanythinghome.png'
