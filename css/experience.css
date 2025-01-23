@@ -1,0 +1,64 @@
+#experience ul {
+    font-size: 15px;
+}
+
+.work{
+    position: relative;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    padding: 20px 50px;
+    margin-bottom: 30px;
+    background-color: transparent;
+    border-radius: 10px;
+   
+}
+
+.work:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: scale(1.05);
+    box-shadow: 0.3em 0.3em 1em rgb(0, 0, 0);
+}
+
+.work-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.thumbnail {
+    width: 100px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px;
+    margin-bottom: 15px;
+  }
+
+.work-date,
+.work-location {
+    font-size: 0.9rem;
+    color: #ffffff;
+}
+
+.work-date {
+    font-weight: bold;
+}
+
+.work-location {
+    font-style: italic;
+}
+
+.work-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #9209dc; /* Dark purple */
+}
+
+.work-company {
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.work-description {
+    font-size: 1rem;
+    color: #bcbcbc;
+    margin-bottom: 15px;
+}

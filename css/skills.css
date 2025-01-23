@@ -1,0 +1,35 @@
+.skill-categories {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .skill-category {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    background: transparent;
+    border-radius: 10px;
+    padding: 20px;
+  }
+  .skill-category h3 {
+    color: #9209dc;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #9209dc;
+    padding-bottom: 10px;
+  }
+
+  .skill-category:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: scale(1.05);
+    box-shadow: 0.3em 0.3em 1em rgb(0, 0, 0);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.skill-category h3:hover {
+    color: #ffffff;
+    
+}
+
+.skill-category h3.highlight {
+    color: #9209dc; /* Change the color to the highlighted color */
+    
+}
