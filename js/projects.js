@@ -9,6 +9,12 @@ function openGallery(galleryId) {
         'ticketScoutGallery': [
             'images/ticketscout/ticscouthome.png'
         ],
+        'recipeFinderGallery': [
+            'images/recipeFinder/rfhome.png',
+            'images/recipeFinder/rfmex.png',
+            'images/recipeFinder/rfmedit.png',
+            'images/recipeFinder/rfrandom.png'
+        ],
         'travelXGallery': [
             'images/travelx/travelxhomess.png',
             'images/travelx/travelximages.png',
@@ -20,7 +26,7 @@ function openGallery(galleryId) {
             'images/mole:puzzle/moleend.png',
             'images/mole:puzzle/sliding.png'
         ],
-        'stocksDipGallery': [
+        'stockTrackerGallery': [
             'images/stocksdipfind/stockshome.png'
         ],
         'askMeAnyGallery': [
