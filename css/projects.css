@@ -1,19 +1,38 @@
+/* General gallery styles */
 .gallery {
-    display: flex;
-    flex-direction: column;
+    display: grid; /* Switch to CSS grid */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Two columns with responsive behavior */
+    gap: 20px; /* Space between columns and rows */
     background-color: rgba(255, 255, 255, 0.1);
     padding: 30px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    height: 100%;
     font-size: 1rem;
     background: linear-gradient(-45deg, #0c010f, #1b0033, #090014, #1c0824); /* Retain gradient */
     width: 100%;
+    box-sizing: border-box; /* Include padding in width calculation */
 }
 
-.gallery:hover {
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+/* Individual card styling */
+.gallery-item {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column; /* Arrange items in a column */
+    margin: 0; /* Remove extra bottom margin */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
+/* Hover effects for the card */
+.gallery-item:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhance hover shadow */
+    background-color: rgba(255, 255, 255, 0.1); /* Ensure background stays consistent */
+}
+
+/* Category buttons */
 .gallery-categories {
     display: flex;
     justify-content: center;
@@ -33,6 +52,7 @@
     transition: all 0.3s ease;
 }
 
+/* Hover effect for category button */
 .category-button:hover, .category-button:active {
     background-color: #8a2be2;
     color: #fff;
@@ -40,57 +60,50 @@
     transform: translateY(-2px);
 }
 
-.gallery-item {
-    background-color: rgba(255, 255, 255, 0.1);
-    padding: 15px;
-    padding-bottom: 75px;
-    border-radius: 10px;
-    margin: 15px 0;
-    overflow: hidden;
-    position: relative; /* Required for positioning the button */
-    transition: all 0.3s ease;
-    display: flex; /* Use flexbox for layout */
-    align-items: flex-start; /* Align items at the start */
-    margin-bottom: 20px; /* Space between items */
-    flex-direction: column;
-}
-
+/* Project info and description */
 .gallery-header {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    flex-grow: 1; /* Allow header to take remaining space */
 }
 
 .project-info {
     font-size: 0.9rem;
     color: #bcbcbc;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
 .project-if {
     padding: 0;
     margin: 0;
-    line-height: 0.6;
-    
+    line-height: 1.1;
+    margin-top: -50px;
+    margin-left: 10px;
 }
+
 .project-if li {
     display: flex;
-    align-items: center; /* Align icon and text horizontally */
+    align-items: center;
     padding: 10px 10px;
-    border-left: 3px solid #6c63ff; /* Add left border for visual emphasis */
-    margin-bottom: 5px; /* Spacing between items */
-    transition: all 0.3s ease; /* Smooth transition on hover */
-    border-radius: 4px; /* Rounded corners */
+    border-left: 3px solid #6c63ff;
+    margin-bottom: 5px;
+    transition: all 0.3s ease;
+    border-radius: 4px;
     font-size: 0.9rem;
     color: #bcbcbc;
+    
+}
+
+/* Expand button */
+.expand-button, .visit-site-button, .open-gallery-button {
+    margin-top: 10px;
 }
 
 .hidden {
     display: none;
 }
 
-/* Style for the round expand/close button */
+/* Round expand/close button */
 .expand-button {
     background-color: #421170;
     color: orange;
@@ -117,12 +130,14 @@
     outline: none;
 }
 
+/* Card headings */
 .gallery-items h3 {
     color: #9209dc;
     margin-bottom: 15px;
     font-size: 1.1rem;
 }
 
+/* Hover effects for cards */
 .gallery-item:hover {
     background-color: rgba(255, 255, 255, 0.1);
     transform: scale(1.04);
@@ -130,18 +145,20 @@
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
+/* Content inside the gallery item */
 .gallery-content {
-    display: flex; /* Flexbox for content layout */
-    align-items: flex-start; /* Center align items vertically */
+    padding: 15px; /* Padding for the text content below the image */
 }
 
+/* Thumbnail image styling */
 .thumbnail {
-    width: 120px; /* Set a fixed width for the thumbnail */
+    width: 100%; /* Ensure image fills the container */
     height: auto; /* Maintain aspect ratio */
-    margin-right: 15px; /* Space between image and text */
-    cursor: pointer; /* Change cursor to pointer on hover */
+    border-radius: 5px 5px 0 0; /* Optional: Rounded top corners */
+    margin: 0; /* No margin or padding */
 }
 
+/* Show More button */
 #showMoreBtn {
     background-color: #421170; /* Match the theme color */
     color: orange; /* Text color */
@@ -155,15 +172,18 @@
     width: 100%;
 }
 
+/* Hover effect for Show More button */
 #showMoreBtn:hover {
     background-color: #8a2be2; /* Change color on hover */
     transform: translateY(-2px); /* Slight lift effect on hover */
 }
 
+/* Focus effect for Show More button */
 #showMoreBtn:focus {
     outline: none; /* Remove outline on focus */
 }
 
+/* Show Less button */
 #showLessBtn {
     background-color: #421170; /* Match the theme color */
     color: orange; /* Text color */
@@ -177,11 +197,13 @@
     width: 100%;
 }
 
+/* Hover effect for Show Less button */
 #showLessBtn:hover {
     background-color: #8a2be2; /* Change color on hover */
     transform: translateY(-2px); /* Slight lift effect on hover */
 }
 
+/* Focus effect for Show Less button */
 #showLessBtn:focus {
     outline: none; /* Remove outline on focus */
 }
@@ -232,6 +254,7 @@
     cursor: pointer;
 }
 
+/* Gallery action buttons (view gallery / visit site) */
 .open-gallery-button,
 .visit-site-button {
     position: absolute;
@@ -249,15 +272,16 @@
     box-sizing: border-box;
 }
 
+/* Position the buttons */
 .open-gallery-button {
     left: 20px; /* Move to the left */
-    
 }
 
 .visit-site-button {
     right: 20px; /* Move to the right */
 }
 
+/* Hover effect for gallery action buttons */
 .open-gallery-button:hover,
 .visit-site-button:hover {
     background-color: rgba(255, 255, 255, 0.3); /* Slightly more pronounced hover effect */
@@ -265,9 +289,48 @@
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Stronger shadow for hover */
 }
 
+/* Focus effect for gallery action buttons */
 .open-gallery-button:focus,
 .visit-site-button:focus {
     outline: none; /* Remove outline on focus */
     box-shadow: 0 0 4px rgba(255, 255, 255, 0.7); /* Subtle focus glow */
 }
 
+/* Gallery Tech container styling */
+.gallery-tech {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap onto new lines */
+    gap: 15px; /* Space between skill bubbles */
+    justify-content: center; /* Centers the items */
+    margin-top: -20px;
+    padding: 10px;
+    margin-bottom: 65px;
+}
+
+/* Skill bubble styling */
+.skill-bubble {
+    background-color: #421170;
+    color: orange;
+    padding: 5px 15px;
+    border-radius: 30px;
+    font-size: .8rem;
+    display: inline-block;
+    transition: all 0.3s ease;
+    max-width: 200px; /* Prevents bubbles from becoming too wide */
+    white-space: nowrap; /* Prevents text from breaking inside the bubble */
+}
+
+/* Hover effect for skill bubbles */
+.skill-bubble:hover {
+    background-color: #8a2be2;
+    transform: translateY(-2px);
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 600px) {
+    .skill-bubble {
+        font-size: 0.9rem;
+        padding: 6px 15px;
+        max-width: 150px; /* Smaller max-width on mobile */
+    }
+}

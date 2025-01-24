@@ -64,41 +64,47 @@
             }
         });
 
-        window.addEventListener('scroll', function() {
-            const welcomePage = document.getElementById('welcome-page');
-            const scrollPosition = window.scrollY;
+  // Show loading symbol and transition to main page
+window.addEventListener('DOMContentLoaded', function() {
+    const welcomePage = document.getElementById('welcome-page');
+    const loadingSymbol = document.createElement('div');
 
-            if (scrollPosition > 50) { // Adjust this value to change when the welcome page starts to fade
-                welcomePage.style.opacity = 0;
-                welcomePage.style.transform = 'translateY(-100%)';
-                setTimeout(() => {
-                welcomePage.style.display = 'none';
-                }, 500);
-            }
-            });
-            
-        window.addEventListener('scroll', function() {
-            const welcomePage = document.getElementById('welcome-page');
-            const arrowDown = document.querySelector('.arrow-down');
-            const scrollPosition = window.scrollY;
+    // Add the loading symbol to the welcome page
+    loadingSymbol.classList.add('loading-symbol');
+    welcomePage.appendChild(loadingSymbol);
 
-            if (scrollPosition > 50) {
-                welcomePage.style.opacity = 0;
-                welcomePage.style.transform = 'translateY(-100%)';
-                arrowDown.style.opacity = '0'; // Fade out the arrow
-                setTimeout(() => {
-                welcomePage.style.display = 'none';
-                }, 500);
-            }
-            });
+    // Style the loading symbol
+    const style = document.createElement('style');
+    style.innerHTML = `
+        .loading-symbol {
+            width: 50px;
+            height: 50px;
+            border: 5px solid transparent;
+            border-top: 5px solid purple;
+            border-right: 5px solid purple;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            position: absolute;
+            top: calc(50% + 75px);
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
 
-        document.addEventListener('DOMContentLoaded', function() {
-            const arrow = document.querySelector('.arrow-down');
-            setTimeout(() => {
-                arrow.style.opacity = '1';
-            }, 1700);
-            });
-            
+        @keyframes spin {
+            0% { transform: translate(-50%, -50%) rotate(0deg); }
+            100% { transform: translate(-50%, -50%) rotate(360deg); }
+        }
+    `;
+    document.head.appendChild(style);
 
+    // Wait for 1 second, then fade out the welcome page
+    setTimeout(() => {
+        welcomePage.style.transition = 'opacity .5s ease, transform 1s ease';
+        welcomePage.style.opacity = '0';
+        welcomePage.style.transform = 'translateY(-150%)';
 
-
+        setTimeout(() => {
+            welcomePage.style.display = 'none';
+        }, 1000); // Match the transition duration
+    }, 1000); // 1-second delay
+});

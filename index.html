@@ -164,16 +164,16 @@
     <section id="projects">
         <h2>Projects and Work</h2>
         <section id="gallery" class="gallery">
-            <div class="gallery-categories">
+          <!--  <div class="gallery-categories">
                 <button class="category-button active" data-category="all" onclick="filterGallery('all')">All</button>
                 <button class="category-button" data-category="web" onclick="filterGallery('web')">Web Development</button>
-            </div>
+            </div> -->
         
             <div class="gallery-items">
                 <div class="gallery-item web">
-                    <h3>Grant County Special Education Cooperative Website</h3>
+                    <img src="images/noimage.png" onclick="openGallery('grantCountyGallery')" alt="Grant County Special Education Cooperative Website Project Image" class="thumbnail">
                     <div class="gallery-content">
-                        <img src="images/grantcounty/thumbnail.png" alt="Project Image" class="thumbnail" onclick="">
+                        <h3>Grant County Special Education Cooperative Website</h3>
                         <div class="gallery-header">
                             <p class="project-info">A responsive and user-friendly website for the Grant County School District's Special Education Cooperative.</p>
                         </div>
@@ -196,214 +196,215 @@
                     <!--<button class="open-gallery-button" onclick="openGallery('grantCountyGallery')">View Images</button>-->
                 </div>
             </div>
+            
 
             <div class="gallery-items">
-                <div class="gallery-item web">
-                    <h3>Recipe Finder</h3>
-                    <div class="gallery-content">
-                        <img src="images/recipeFinder/rfhome.png" onclick="openGallery('recipeFinderGallery')" alt="Project Image" class="thumbnail">
-                        <div class="gallery-header">
-                            <p class="project-info">A website that allows users to search for recipes using ingredients or keywords, fetching results through API integration.</p>
-                        </div>
-                    </div>
-                    <div class="gallery-details hidden">
-                        <ul class="project-if">
-                            <li>Designed a search-based interface for seamless recipe discovery</li>
-                            <li>Integrated recipe API for real-time recipe data</li>
-                            <li>Focused on user-friendly navigation and data presentation</li>
-                        </ul>
-                        <br>
-                        <div class="gallery-tech">
-                            <span class="skill-bubble">HTML/CSS</span>
-                            <span class="skill-bubble">JavaScript</span>
-                            <span class="skill-bubble">API Integration</span>
-                            <span class="skill-bubble">Search Optimization</span>
-                        </div>
-                    </div>
-                    <button class="expand-button" onclick="toggleDetails(this)">+</button>
-                    <a href="https://recipe-finder-roan-nine.vercel.app/" target="_blank" class="visit-site-button">Visit Site</a>
-                    <button class="open-gallery-button" onclick="openGallery('recipeFinderGallery')">View Images</button>
-                </div>
+    <div class="gallery-item web">
+        <img src="images/recipeFinder/rfhome.png" onclick="openGallery('recipeFinderGallery')" alt="Project Image" class="thumbnail">
+        <div class="gallery-content">
+            <h3>Recipe Finder</h3>
+            <div class="gallery-header">
+                <p class="project-info">A website that allows users to search for recipes using ingredients or keywords, fetching results through API integration.</p>
             </div>
+        </div>
+        <div class="gallery-details hidden">
+            <ul class="project-if">
+                <li>Designed a search-based interface for seamless recipe discovery</li>
+                <li>Integrated recipe API for real-time recipe data</li>
+                <li>Focused on user-friendly navigation and data presentation</li>
+            </ul>
+            <br>
+            <div class="gallery-tech">
+                <span class="skill-bubble">HTML/CSS</span>
+                <span class="skill-bubble">JavaScript</span>
+                <span class="skill-bubble">API Integration</span>
+                <span class="skill-bubble">Search Optimization</span>
+            </div>
+        </div>
+        <button class="expand-button" onclick="toggleDetails(this)">+</button>
+        <a href="https://recipe-finder-roan-nine.vercel.app/" target="_blank" class="visit-site-button">Visit Site</a>
+        <button class="open-gallery-button" onclick="openGallery('recipeFinderGallery')">View Images</button>
+    </div>
+</div>
+
             
             
         
-            <div class="gallery-items">
-                <div class="gallery-item web">
-                    <h3>Ticket Scout</h3>
-                    <div class="gallery-content">
-                        <img src="images/ticketscout/ticscouthome.png" onclick="openGallery('ticketScoutGallery')" alt="Project Image" class="thumbnail" onclick="">
-                        <div class="gallery-header">
-                            <p class="project-info">A web application for analyzing ticket prices across multiple platforms, providing real-time access to the best deals.</p>
-                        </div>
-                    </div>
-                    <div class="gallery-details hidden">
-                        <ul class="project-if">
-                            <li>Implemented real-time price comparison and filtering</li>
-                            <li>Integrated multiple APIs for data aggregation</li>
-                            <li>Developed an interactive and responsive UI</li>
-                        </ul>
-                        <br>
-                        <div class="gallery-tech">
-                            <span class="skill-bubble">HTML/CSS</span>
-                            <span class="skill-bubble">JavaScript</span>
-                            <span class="skill-bubble">TypeScript</span>
-                            <span class="skill-bubble">PHP</span>
-                            <span class="skill-bubble">SQL</span>
-                            <span class="skill-bubble">API Integration</span>
-                        </div>
-                    </div> 
-                    <button class="expand-button" onclick="toggleDetails(this)">+</button>
-                    <button class="open-gallery-button" onclick="openGallery('ticketScoutGallery')">View Images</button>
-                </div>
+<div class="gallery-items">
+    <div class="gallery-item web">
+        <img src="images/ticketscout/ticscouthome.png" onclick="openGallery('ticketScoutGallery')" alt="Ticket Scout Project Image" class="thumbnail">
+        <div class="gallery-content">
+            <h3>Ticket Scout</h3>
+            <div class="gallery-header">
+                <p class="project-info">A web application for analyzing ticket prices across multiple platforms, providing real-time access to the best deals.</p>
             </div>
+        </div>
+        <div class="gallery-details hidden">
+            <ul class="project-if">
+                <li>Implemented real-time price comparison and filtering</li>
+                <li>Integrated multiple APIs for data aggregation</li>
+                <li>Developed an interactive and responsive UI</li>
+            </ul>
+            <br>
+            <div class="gallery-tech">
+                <span class="skill-bubble">HTML/CSS</span>
+                <span class="skill-bubble">JavaScript</span>
+                <span class="skill-bubble">TypeScript</span>
+                <span class="skill-bubble">PHP</span>
+                <span class="skill-bubble">SQL</span>
+                <span class="skill-bubble">API Integration</span>
+            </div>
+        </div>
+        <button class="expand-button" onclick="toggleDetails(this)">+</button>
+        <a href="https://ticket-scout-xyz.com" target="_blank" class="visit-site-button">Visit Site</a>
+        <button class="open-gallery-button" onclick="openGallery('ticketScoutGallery')">View Images</button>
+    </div>
+</div>
 
-            <div class="gallery-items">
-                <div class="gallery-item web">
-                    <h3>Stock Tracker</h3>
-                    <div class="gallery-content">
-                        <img src="images/stocksTracker/stockTrac1.png" onclick="openGallery('stockTrackerGallery')" alt="Project Image" class="thumbnail">
-                        <div class="gallery-header">
-                            <p class="project-info">A dynamic stock tracking website featuring a moving stock ticker, a searchable stock database, and real-time graphical updates.</p>
-                        </div>
-                    </div>
-                    <div class="gallery-details hidden">
-                        <ul class="project-if">
-                            <li>Built a moving stock ticker for live updates</li>
-                            <li>Developed a graph to visualize stock trends in real time</li>
-                            <li>Implemented a search function for detailed stock information</li>
-                        </ul>
-                        <br>
-                        <div class="gallery-tech">
-                            <span class="skill-bubble">HTML/CSS</span>
-                            <span class="skill-bubble">JavaScript</span>
-                            <span class="skill-bubble">TypeScript</span>
-                            <span class="skill-bubble">API Integration</span>
-                            <span class="skill-bubble">Data Visualization</span>
-                        </div>
-                    </div>
-                    <button class="expand-button" onclick="toggleDetails(this)">+</button>
-                    <a href="https://stocks-tracker-seven.vercel.app/" target="_blank" class="visit-site-button">Visit Site</a>
-                    <button class="open-gallery-button" onclick="openGallery('stockTrackerGallery')">View Images</button>
-                </div>
+<div class="gallery-items">
+    <div class="gallery-item web">
+        <img src="images/stocksTracker/stockTrac1.png" onclick="openGallery('stockTrackerGallery')" alt="Stock Tracker Project Image" class="thumbnail">
+        <div class="gallery-content">
+            <h3>Stock Tracker</h3>
+            <div class="gallery-header">
+                <p class="project-info">A dynamic stock tracking website featuring a moving stock ticker, a searchable stock database, and real-time graphical updates.</p>
             </div>
-            
-            <div class="gallery-items">
-                <div class="gallery-item web">
-                    <h3>TravelX</h3>
-                    <div class="gallery-content">
-                        <img src="images/travelx/travelxhomess.png" onclick="openGallery('travelXGallery')"alt="Project Image" class="thumbnail" onclick="">
-                        <div class="gallery-header">
-                            <p class="project-info">A multi-page travel website offering real-time weather updates, destination information, and AI-generated travel recommendations.</p>
-                        </div>
-                    </div>
-                    <div class="gallery-details hidden">
-                        <ul class="project-if">
-                            <li>Designed intuitive interface with dynamic features</li>
-                            <li>Implemented responsive design and multi-API integration</li>
-                            <li>Focused on building interactive and seamless user experiences</li>
-                        </ul>
-                        <br>
-                        <div class="gallery-tech">
-                            <span class="skill-bubble">HTML/CSS</span>
-                            <span class="skill-bubble">JavaScript</span>
-                            <span class="skill-bubble">API Integration</span>
-                            <span class="skill-bubble">Responsive Design</span>
-                        </div>
-                    </div>
-                    <button class="expand-button" onclick="toggleDetails(this)">+</button>
-                    <button class="open-gallery-button" onclick="openGallery('travelXGallery')">View Images</button>
-                </div>
+        </div>
+        <div class="gallery-details hidden">
+            <ul class="project-if">
+                <li>Built a moving stock ticker for live updates</li>
+                <li>Developed a graph to visualize stock trends in real time</li>
+                <li>Implemented a search function for detailed stock information</li>
+            </ul>
+            <br>
+            <div class="gallery-tech">
+                <span class="skill-bubble">HTML/CSS</span>
+                <span class="skill-bubble">JavaScript</span>
+                <span class="skill-bubble">TypeScript</span>
+                <span class="skill-bubble">API Integration</span>
+                <span class="skill-bubble">Data Visualization</span>
             </div>
-            
-            
-            <div class="gallery-items">
-                <div class="gallery-item web">
-                    <h3>Whack-a-Mole & Sliding Puzzle Game</h3>
-                    <div class="gallery-content">
-                        <img src="images/mole:puzzle/mole.png" onclick="openGallery('molePuzzleGallery')"alt="Project Image" class="thumbnail" onclick="">
-                        <div class="gallery-header">
-                            <p class="project-info">An engaging dual-game experience featuring a classic whack-a-mole game and a sliding puzzle, offering both quick reflex challenges and strategic thinking.</p>
-                        </div>
-                    </div>
-                    <div class="gallery-details hidden">
-                        <ul class="project-if">
-                            <li>Developed interactive gameplay mechanics for both games</li>
-                            <li>Designed a responsive and visually appealing user interface</li>
-                            <li>Implemented dynamic animations and smooth transitions</li>
-                            <li>Enhanced user engagement with score tracking and feedback</li>
-                        </ul>
-                        <br>
-                        <div class="gallery-tech">
-                            <span class="skill-bubble">HTML/CSS</span>
-                            <span class="skill-bubble">JavaScript</span>
-                            <span class="skill-bubble">Game Development</span>
-                            <span class="skill-bubble">UI Design</span>
-                        </div>
-                    </div>
-                    <button class="expand-button" onclick="toggleDetails(this)">+</button>
-                    <button class="open-gallery-button" onclick="openGallery('molePuzzleGallery')">View Images</button>
-                </div>
-            </div>
-            
-            <div class="gallery-items">
-                <div class="gallery-item web hidden">
-                    <h3>Ask Me Anything</h3>
-                    <div class="gallery-content">
-                        <img src="images/askanything/askanythinghome.png" onclick="openGallery('askMeAnyGallery')" alt="Project Image" class="thumbnail" onclick="">
-                    <div class="gallery-header"> 
-                        <p class="project-info">A Q&A website for comparative insights from multiple sources (Google and OpenAI), providing users with comprehensive answers to their queries.</p> 
-                    </div>
-                </div>
-                    <div class="gallery-details hidden"> 
-                        <ul class="project-if"> 
-                            <li>Built a dynamic Q&A platform integrating multiple data sources</li> 
-                            <li>Implemented asynchronous JavaScript for seamless API interactions</li> 
-                            <li>Developed user-friendly interface for complex information display</li> 
-                            <li>Enhanced query processing and result comparison functionality</li> 
-                        </ul> 
-                        <br> 
-                        <div class="gallery-tech">
-                            <span class="skill-bubble">HTML/CSS</span> 
-                            <span class="skill-bubble">JavaScript</span> 
-                            <span class="skill-bubble">API Integration</span>
-                        </div> 
-                    </div> 
-                    <button class="expand-button" onclick="toggleDetails(this)">+</button> 
-                    <button class="open-gallery-button" onclick="openGallery('askMeAnyGallery')">View Images</button>
-                </div> 
-            </div>
+        </div>
+        <button class="expand-button" onclick="toggleDetails(this)">+</button>
+        <a href="https://stocks-tracker-seven.vercel.app/" target="_blank" class="visit-site-button">Visit Site</a>
+        <button class="open-gallery-button" onclick="openGallery('stockTrackerGallery')">View Images</button>
+    </div>
+</div>
 
-            <div class="gallery-items">
-                <div class="gallery-item web hidden">
-                    <h3>The Shoreline Hotel</h3>
-                    <div class="gallery-content">
-                        <img src="images/shoreline/shmain.png" onclick="openGallery('shorelineHotelGallery')" alt="Project Image" class="thumbnail">
-                        <div class="gallery-header">
-                                <p class="project-info">The Shoreline Hotel is a multi-page website for an imaginary hotel, including sections for rooms, amenities, and bookings.</p>
-                        </div>
-                    </div>
-                    <div class="gallery-details hidden">
-                        <ul class="project-if">
-                            <li>Designed an elegant multi-page website with a user-friendly interface</li>
-                            <li>Incorporated parallax scrolling effects for an immersive experience</li>
-                            <li>Utilized high-quality visuals to captivate and engage visitors</li>
-                            <li>Ensured responsiveness across all devices</li>
-                        </ul>
-                        <br>
-                        <div class="gallery-tech">
-                            <span class="skill-bubble">Wix</span>
-                            <span class="skill-bubble">Adobe Photoshop</span>
-                            <span class="skill-bubble">Responsive Design</span>
-                            <span class="skill-bubble">UI/UX Design</span>
-                        </div>
-                    </div>
-                    <button class="expand-button" onclick="toggleDetails(this)">+</button>
-                    <a href="https://saagarparikh11.wixsite.com/theshorelinehotel-co" target="_blank" class="visit-site-button">Visit Site</a>
-                    <button class="open-gallery-button" onclick="openGallery('shorelineHotelGallery')">View Images</button>
-                </div>
+<div class="gallery-items">
+    <div class="gallery-item web">
+        <img src="images/travelx/travelxhomess.png" onclick="openGallery('travelXGallery')" alt="TravelX Project Image" class="thumbnail">
+        <div class="gallery-content">
+            <h3>TravelX</h3>
+            <div class="gallery-header">
+                <p class="project-info">A multi-page travel website offering real-time weather updates, destination information, and AI-generated travel recommendations.</p>
             </div>
+        </div>
+        <div class="gallery-details hidden">
+            <ul class="project-if">
+                <li>Designed intuitive interface with dynamic features</li>
+                <li>Implemented responsive design and multi-API integration</li>
+                <li>Focused on building interactive and seamless user experiences</li>
+            </ul>
+            <br>
+            <div class="gallery-tech">
+                <span class="skill-bubble">HTML/CSS</span>
+                <span class="skill-bubble">JavaScript</span>
+                <span class="skill-bubble">API Integration</span>
+                <span class="skill-bubble">Responsive Design</span>
+            </div>
+        </div>
+        <button class="expand-button" onclick="toggleDetails(this)">+</button>
+        <button class="open-gallery-button" onclick="openGallery('travelXGallery')">View Images</button>
+    </div>
+</div>
 
+<div class="gallery-items">
+    <div class="gallery-item web">
+        <img src="images/mole:puzzle/mole.png" onclick="openGallery('molePuzzleGallery')" alt="Whack-a-Mole & Sliding Puzzle Game Project Image" class="thumbnail">
+        <div class="gallery-content">
+            <h3>Whack-a-Mole & Sliding Puzzle Game</h3>
+            <div class="gallery-header">
+                <p class="project-info">An engaging dual-game experience featuring a classic whack-a-mole game and a sliding puzzle, offering both quick reflex challenges and strategic thinking.</p>
+            </div>
+        </div>
+        <div class="gallery-details hidden">
+            <ul class="project-if">
+                <li>Developed interactive gameplay mechanics for both games</li>
+                <li>Designed a responsive and visually appealing user interface</li>
+                <li>Implemented dynamic animations and smooth transitions</li>
+                <li>Enhanced user engagement with score tracking and feedback</li>
+            </ul>
+            <br>
+            <div class="gallery-tech">
+                <span class="skill-bubble">HTML/CSS</span>
+                <span class="skill-bubble">JavaScript</span>
+                <span class="skill-bubble">Game Development</span>
+                <span class="skill-bubble">UI Design</span>
+            </div>
+        </div>
+        <button class="expand-button" onclick="toggleDetails(this)">+</button>
+        <button class="open-gallery-button" onclick="openGallery('molePuzzleGallery')">View Images</button>
+    </div>
+</div>
+
+<div class="gallery-items">
+    <div class="gallery-item web">
+        <img src="images/askanything/askanythinghome.png" onclick="openGallery('askMeAnyGallery')" alt="Ask Me Anything Project Image" class="thumbnail">
+        <div class="gallery-content">
+            <h3>Ask Me Anything</h3>
+            <div class="gallery-header">
+                <p class="project-info">A Q&A website for comparative insights from multiple sources (Google and OpenAI), providing users with comprehensive answers to their queries.</p>
+            </div>
+        </div>
+        <div class="gallery-details hidden">
+            <ul class="project-if">
+                <li>Built a dynamic Q&A platform integrating multiple data sources</li>
+                <li>Implemented asynchronous JavaScript for seamless API interactions</li>
+                <li>Developed user-friendly interface for complex information display</li>
+                <li>Enhanced query processing and result comparison functionality</li>
+            </ul>
+            <br>
+            <div class="gallery-tech">
+                <span class="skill-bubble">HTML/CSS</span>
+                <span class="skill-bubble">JavaScript</span>
+                <span class="skill-bubble">API Integration</span>
+            </div>
+        </div>
+        <button class="expand-button" onclick="toggleDetails(this)">+</button>
+        <button class="open-gallery-button" onclick="openGallery('askMeAnyGallery')">View Images</button>
+    </div>
+</div>
+
+<div class="gallery-items">
+    <div class="gallery-item web">
+        <img src="images/shoreline/shmain.png" onclick="openGallery('shorelineHotelGallery')" alt="The Shoreline Hotel Project Image" class="thumbnail">
+        <div class="gallery-content">
+            <h3>The Shoreline Hotel</h3>
+            <div class="gallery-header">
+                <p class="project-info">The Shoreline Hotel is a multi-page website for an imaginary hotel, including sections for rooms, amenities, and bookings.</p>
+            </div>
+        </div>
+        <div class="gallery-details hidden">
+            <ul class="project-if">
+                <li>Designed an elegant multi-page website with a user-friendly interface</li>
+                <li>Incorporated parallax scrolling effects for an immersive experience</li>
+                <li>Utilized high-quality visuals to captivate and engage visitors</li>
+                <li>Ensured responsiveness across all devices</li>
+            </ul>
+            <br>
+            <div class="gallery-tech">
+                <span class="skill-bubble">Wix</span>
+                <span class="skill-bubble">Adobe Photoshop</span>
+                <span class="skill-bubble">Responsive Design</span>
+                <span class="skill-bubble">UI/UX Design</span>
+            </div>
+        </div>
+        <button class="expand-button" onclick="toggleDetails(this)">+</button>
+        <a href="https://saagarparikh11.wixsite.com/theshorelinehotel-co" target="_blank" class="visit-site-button">Visit Site</a>
+        <button class="open-gallery-button" onclick="openGallery('shorelineHotelGallery')">View Images</button>
+    </div>
+</div>
             
 
             <div id="galleryModal" class="modal">
