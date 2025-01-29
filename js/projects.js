@@ -16,9 +16,11 @@ function openGallery(galleryId) {
             'images/recipeFinder/rfrandom.png'
         ],
         'travelXGallery': [
-            'images/travelx/travelxhomess.png',
-            'images/travelx/travelximages.png',
-            'images/travelx/travelxquestions.png'
+            'images/travelx/home.png',
+            'images/travelx/weatherNYc.png',
+            'images/travelx/weatherDALf.png',
+            'images/travelx/pics.png',
+            'images/travelx/aiAssistant.png'
         ],
         'molePuzzleGallery': [
             'images/mole:puzzle/welcome.png',
