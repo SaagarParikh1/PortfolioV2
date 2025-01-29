@@ -20,6 +20,7 @@ function openGallery(galleryId) {
             'images/travelx/weatherNYc.png',
             'images/travelx/weatherDALf.png',
             'images/travelx/pics.png',
+            'images/travelx/activities.png',
             'images/travelx/aiAssistant.png'
         ],
         'molePuzzleGallery': [
