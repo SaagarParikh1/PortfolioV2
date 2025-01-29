@@ -116,11 +116,24 @@ function filterGallery(category) {
 
     updateShowMoreButton();
 }
-
 function toggleDetails(button) {
-    const details = button.previousElementSibling;
-    details.classList.toggle("hidden");
-    button.textContent = details.classList.contains("hidden") ? "+" : "-";
+    // Get the parent gallery item
+    const galleryItem = button.closest('.gallery-item');
+    // Get the hidden details section
+    const detailsSection = galleryItem.querySelector('.gallery-details');
+
+    // Toggle the expanded class on the gallery item
+    galleryItem.classList.toggle('expanded');
+
+    // Toggle the visibility of the details section
+    detailsSection.classList.toggle('hidden');
+
+    // Update the button text or style
+    if (galleryItem.classList.contains('expanded')) {
+        button.textContent = '-'; // Change to minus sign when expanded
+    } else {
+        button.textContent = '+'; // Change back to plus sign when collapsed
+    }
 }
 
 function showMore() {

@@ -1,4 +1,3 @@
-/* General gallery styles */
 .gallery {
     display: grid; /* Switch to CSS grid */
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Two columns with responsive behavior */
@@ -23,6 +22,7 @@
     flex-direction: column; /* Arrange items in a column */
     margin: 0; /* Remove extra bottom margin */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    height: 400px; /* Set a fixed height for all gallery items */
 }
 
 /* Hover effects for the card */
@@ -68,28 +68,28 @@
 }
 
 .project-info {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     color: #bcbcbc;
-    margin-bottom: 50px;
+    margin-bottom: 10px; /* Adjust margin for consistent spacing */
 }
 
 .project-if {
     padding: 0;
     margin: 0;
-    line-height: 1.1;
-    margin-top: -50px;
+    line-height: 1;
+    margin-top: -10px;
     margin-left: 10px;
 }
 
 .project-if li {
     display: flex;
     align-items: center;
-    padding: 10px 10px;
+    padding: 5px 5px;
     border-left: 3px solid #6c63ff;
     margin-bottom: 5px;
     transition: all 0.3s ease;
     border-radius: 4px;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     color: #bcbcbc;
     
 }
@@ -145,15 +145,20 @@
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-/* Content inside the gallery item */
+/* Ensure the content inside the gallery item is consistent */
 .gallery-content {
     padding: 15px; /* Padding for the text content below the image */
+    flex-grow: 1; /* Allow content to grow and fill the space */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distribute space evenly */
 }
 
 /* Thumbnail image styling */
 .thumbnail {
     width: 100%; /* Ensure image fills the container */
-    height: auto; /* Maintain aspect ratio */
+    height: 200px; /* Set a fixed height for the thumbnail */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
     border-radius: 5px 5px 0 0; /* Optional: Rounded top corners */
     margin: 0; /* No margin or padding */
 }
@@ -254,11 +259,10 @@
     cursor: pointer;
 }
 
-/* Gallery action buttons (view gallery / visit site) */
 .open-gallery-button,
 .visit-site-button {
     position: absolute;
-    bottom: 20px; /* Increased space from the bottom */
+    bottom: 18px; /* Increased space from the bottom */
     background-color: transparent;
     border: 2px solid white; /* White border */
     color: white;
@@ -300,20 +304,20 @@
 .gallery-tech {
     display: flex;
     flex-wrap: wrap; /* Allows items to wrap onto new lines */
-    gap: 15px; /* Space between skill bubbles */
+    gap: 10px; /* Space between skill bubbles */
     justify-content: center; /* Centers the items */
-    margin-top: -20px;
+    margin-top: -20px; /* Adjust margin for consistent spacing */
     padding: 10px;
-    margin-bottom: 65px;
+    margin-bottom: 10px; /* Adjust margin for consistent spacing */
 }
 
 /* Skill bubble styling */
 .skill-bubble {
     background-color: #421170;
     color: orange;
-    padding: 5px 15px;
+    padding: 5px 10px;
     border-radius: 30px;
-    font-size: .8rem;
+    font-size: 0.75rem;
     display: inline-block;
     transition: all 0.3s ease;
     max-width: 200px; /* Prevents bubbles from becoming too wide */
@@ -328,9 +332,33 @@
 
 /* Responsive styles for smaller screens */
 @media (max-width: 600px) {
+    .gallery-item {
+        height: auto; /* Allow height to adjust on smaller screens */
+    }
+
+    .thumbnail {
+        height: 150px; /* Adjust thumbnail height for smaller screens */
+    }
+
     .skill-bubble {
         font-size: 0.9rem;
         padding: 6px 15px;
         max-width: 150px; /* Smaller max-width on mobile */
     }
 }
+
+/* Expanded state for gallery items */
+.gallery-item.expanded {
+    height: 600px; /* Allow the card to expand to fit its content */
+}
+
+/* Hidden details section */
+.gallery-details.hidden {
+    display: none;
+}
+
+/* Visible details section */
+.gallery-details:not(.hidden) {
+    display: block;
+}
+
