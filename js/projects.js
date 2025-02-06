@@ -9,7 +9,7 @@ function openGallery(galleryId) {
         'ticketScoutGallery': [
             'images/ticketscout/home.png',
             'images/ticketscout/howworks.png',
-            'mages/ticketscout/mavs.png',
+            'images/ticketscout/mavs.png',
             'images/ticketscout/search.png',
             'images/ticketscout/trending.png'
         ],
