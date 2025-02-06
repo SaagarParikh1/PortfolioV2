@@ -7,7 +7,11 @@ function openGallery(galleryId) {
             'images/grantcounty/image3.png'
         ],
         'ticketScoutGallery': [
-            'images/ticketscout/ticscouthome.png'
+            'images/ticketscout/home.png',
+            'images/ticketscout/howworks.png',
+            'mages/ticketscout/mavs.png',
+            'images/ticketscout/search.png',
+            'images/ticketscout/trending.png'
         ],
         'recipeFinderGallery': [
             'images/recipeFinder/rfhome.png',
