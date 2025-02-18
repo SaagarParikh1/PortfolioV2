@@ -1,6 +1,11 @@
 // Function to open the image gallery for each project
 function openGallery(galleryId) {
     const images = {
+        'ballAnalyticsGallery': [
+            'images/ballAnalytics/image1.png',
+            'images/ballAnalytics/image2.png',
+            'images/ballAnalytics/image3.png'
+        ],
         'grantCountyGallery': [
             'images/grantcounty/image1.png',
             'images/grantcounty/image2.png',
